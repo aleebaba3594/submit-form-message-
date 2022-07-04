@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+  // let link= "" paste your getform.io link here
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form method="POST" action= {link}>
+        <input type="text" name="name" placeholder="name"/>
+        <input type="text" name="email" placeholder="e-mail"/>
+        <input type="text" name="message" placeholder="message"/>
+
+
+        <button type="submit">submit</button>
+
+
+      </form>
     </div>
   );
 }
